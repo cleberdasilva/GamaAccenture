@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap');
+
+html{
+    scroll-behavior: smooth;
+    background: #dddddd;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+}
+
+h1, h2, h3 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
+
+h4, h5, h6{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+}
+
+p{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+
+h1{
+    font-size: 40px;
+    animation: pulse 2s ease infinite alternate;
+}
+footer{
+    font-family: 'Roboto', sans-serif;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container{
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.container-paralax{
+    /* height: 100vh; */
+    display: flex;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container-paralax.set{
+    width: 50%;
+    height: 50vh;
+}
+
+.container-paralax.set2{
+    width: 30%;
+    height: 50vh;
+}
+
+.content-paralax--data{
+    color:#fff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.bg-img--version--1{
+    background-image: url('https://wallpapercave.com/wp/WcOQA84.jpg');
+}
+
+.bg-img--version--2{
+    background-image: url('https://wallpapercave.com/wp/u9AVLry.jpg');
+}
+
+.bg-img--version--3{
+    background-image: url('https://wallpapercave.com/wp/wp3719409.jpg');
+}
+
+.bg-img--version--sfo1{
+    background-image: url('https://pbs.twimg.com/media/EXbyWCdU4AATNWD.jpg');
+}
+
+.bg-img--version--sfo2{
+    background-image: url('https://w5d3u8y7.stackpathcdn.com/wp-content/uploads/2014/11/dicas-de-san-francisco-pier-39-.jpg');
+}
+
+.bg-img--version--sfo3{
+    background-image: url('https://www.visiteosusa.com.br/sites/default/files/styles/hero_l_x2/public/images/hero_media_image/2019-03/6ed85006e82d4020f725614134a11439.jpeg?itok=4QJfV60B');
+}
+
+.container-header{
+    text-align: center;
+}
+
+.content-default{
+    padding: 20px;
+}
+
+.content-flex{
+    display: flex;
+}
+
+.content-flexgrid{
+    display: grid;
+}
+
+.content-flex--direction{
+    flex-direction: row;
+}
+
+.flex-wrap{
+    flex: 1;
+    margin: 2px;
+    width: 33%;
+    justify-content: center;
+}
+
+.content-flex--reverse{
+    flex-direction: row-reverse;
+}
+
+.content-space--default{
+    padding: 20px;
+    margin: 2;
+    border-radius: 5px;
+}
+
+.content-justify{
+    justify-content: center;
+}
+
+.content-justify--bt{
+    justify-content: space-around;
+}
+
+.content-align{
+    align-items: flex-start;
+}
+
+.content-left--main{
+    position: fixed;
+    left: 0px;
+    top:30%;
+    padding: 15px 5px 5px 15px;
+    width: 80px;
+    height: 250px;
+    background: #00acee;
+    border-radius: 0 15px 15px 0;
+    display: grid;
+    z-index: 3;
+    box-shadow: 13px 7px 34px -12px rgba(223, 131, 200, 0.75);
+
+}
+
+.content-top--button{
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    background-color: #00acee;
+    border-radius: 100px;
+    padding: 10px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    transition: 1s;
+}
+
+.content-top--button:hover{
+    background-color: #9000c5;
+    transition: 1s;
+}
+
+i{
+    font-size: 40px;
+    color: #fff;
+
+}
+
+.flex-item--1{
+    flex: 1;
+    margin: 2px;
+}
+
+.flex-item--2{
+    flex: 2;
+    margin: 2px;
+}
+
+.flex-item--3{
+    flex: 3;
+    margin: 2px;
+}
+
+
+
+.text-center{
+    text-align: center;
+}
+
+.bg-color--purple{
+    background-color: #9000c5;
+    color: #fff;
+}
+
+.bg-color--yellow{
+    background-color: #b2b2b2;
+    color: #03332b;
+}
+
+.bg-color--pink{
+    background-color: 	#fb00ca;
+    color: #fff;
+}
+
+.bg-color--bluef{
+    background-color: #3b5998 ;
+    color: #fff;
+}
+
+.bg-color--blue{
+    background-color: 	#3b5998; 
+    color: #fff;
+}
+
+/*media query */
+
+@media only screen and (max-width: 480px){
+    .content-flex{
+        display: flow-root;
+    }
+    .flex-wrap{
+        width: 100%;
+    }
+    .container{
+        max-width: 100%;
+    }
+}
+
+@media only screen and (max-width: 970px ) {
+    .content-flex {
+        display: grid;
+    }
+    .content-flex--direction {
+        flex-direction: column;
+    }
+    .flex-wrap{
+        width: 100%;
+        margin: 5px 0;
+    }
+    .flex-item--1, .flex-item--2, .flex-item--3{
+        margin: 5px 0;
+    }
+    p{
+        font-size: small;
+    }
+
+}
+
+@media only screen and (min-width: 971px) and (max-width: 1024px) {
+    p{
+        font-size: medium;
+    }
+}
+
+@keyframes puse{
+    0%, 100%{
+        color: coral;
+    }
+    50%{
+        color: white;
+    }
+
+}
