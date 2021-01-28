@@ -118,11 +118,13 @@
                 
 
                 // console.log(FirstName)
-
+                
                 let Content = `<div class="container">
-                                    <div class="card">
+                                                                     
+                                    <div class="card text-dark bg-light mb-3" style="max-width: 18rem;">
+                                        <div class="card-header">Dados Cadastrais</div>
                                         <div class="card-body">
-                                            <h1>${res.data.message} = ${res.status}</h1>
+                                            <h4>${res.data.message} = ${res.status}</h4>
                                             <p><b>${FirstName[0]}</b> seu cadastros foi realizado com sucesso</p>
                                             <p><b>E-mail</b>: ${userMail}<p>
                                             <p><b>Idade</b>: ${ageUser} anos<p>
